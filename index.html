@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Para o Amor da Minha Vida</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    .cartinha {
+      font-family: 'Great Vibes', cursive;
+      color: #a83257;
+    }
+
+    .timeline div {
+      margin-bottom: 15px;
+      padding-left: 15px;
+      border-left: 3px solid #ff4d6d;
+      position: relative;
+    }
+
+    .timeline div::before {
+      content: '';
+      width: 10px;
+      height: 10px;
+      background-color: #ff4d6d;
+      border-radius: 50%;
+      position: absolute;
+      left: -7px;
+      top: 7px;
+    }
+
+    .heart {
+      position: fixed;
+      top: -50px;
+      font-size: 24px;
+      color: #ff4d6d;
+      animation-name: fall;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+      pointer-events: none;
+      user-select: none;
+      z-index: 9999;
+    }
+
+    @keyframes fall {
+      0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(100vh) rotate(360deg);
+        opacity: 0;
+      }
+    }
+
+    /* Moldura personalizada para o vídeo */
+.video-frame {
+  border: 2px solid #f8d7da;           /* Borda rosadinha suave */
+  border-radius: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  transition: transform 0.3s ease;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.video-frame:hover {
+  transform: scale(1.02);
+}
+    
+
+    @media (min-width: 768px) {
+      .video-frame {
+        width: 50%;
+      }
+    }
+
+    /* Imagens sem corte no carrossel */
+  .carousel-item img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    margin: 0 auto;
+    display: block;
+  }
+
+  #contadorJuntos {
+  font-size: 3.5rem; /* Bomba o tamanho */
+  font-weight: 900;
+  text-align: center;
+  margin: 40px auto;
+  padding: 30px 20px;
+  max-width: 600px;
+  color: #fff;
+  font-family: 'Great Vibes', cursive;
+  border-radius: 30px;
+  background: linear-gradient(-45deg, #ff4d6d, #ff2e63, #ff6f91, #ff99ac);
+  background-size: 400% 400%;
+  animation: gradientShift 12s ease infinite;
+  box-shadow: 0 0 40px rgba(255, 45, 99, 0.8);
+  user-select: none;
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+  </style>
+</head>
+<body>
+  <section class="text-center p-5 bg-light" id="boas-vindas">
+    <h1 class="display-4" style="font-family: 'Great Vibes', cursive;">Oi, meu amor ❤️</h1>
+    <p class="lead">Esse site é só uma das formas que encontrei pra te mostrar o quanto você é especial.</p>
+  </section>
+
+  <section>
+    <div id="contadorJuntos">Calculando tempo juntos...</div>
+  </section>
+
+  <section class="container py-5" id="nossa-historia">
+    <h2 class="text-center mb-4">Nossa História</h2>
+    <div class="timeline">
+      <div><strong>2018</strong> Cheguei em BH e vi ela pela primeira vez na igreja. De cara, não rolou simpatia — nem da minha parte, nem da dela.</div>
+      <div><strong>Meses depois</strong> Vi ela enquanto eu capinava a igreja e algo mudou dentro de mim. Ela se tornou outra pessoa aos meus olhos.</div>
+      <div><strong>Almoço com os pais da amiga</strong> Falei na frente dela e dos pais que queria algo com ela. Mas depois disso, nos afastamos por 4 anos.</div>
+      <div><strong>Durante os 4 anos</strong> 2 anos ela nem falava comigo e nos outros 2 eu estava em um relacionamento.</div>
+      <div><strong>Alguns meses após o fim do meu relacionamento</strong> Voltamos a conversar e a conexão renasceu.</div>
+      <div><strong>12 de Janeiro de 2025</strong> No domingo à tarde, vendo Descendentes, tive a felicidade de ter ela de volta nos meus braços. A melhor coisa que me aconteceu. 💖</div>
+    </div>
+  </section>
+
+  <section class="bg-light py-5" id="galeria">
+    <div class="container">
+      <h2 class="text-center mb-4">Nossos Momentos</h2>
+      <div id="momentosCarousel" class="carousel slide mb-5" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active text-center">
+            <img src="Galeria/7.jpg" class="d-block w-100 rounded shadow" alt="Momento 1" />
+            <div class="mt-2">Olha eu feliz com você! 💑</div>
+          </div>
+          <div class="carousel-item text-center">
+            <img src="Galeria/2.jpg" class="d-block w-100 rounded shadow" alt="Momento 2" />
+            <div class="mt-2">Aquele dia que a gente não queria que acabasse 🌅</div>
+          </div>
+          <div class="carousel-item text-center">
+            <img src="Galeria/3.jpg" class="d-block w-100 rounded shadow" alt="Momento 3" />
+            <div class="mt-2">O abraço que virou lar 🏡</div>
+          </div>
+          <div class="carousel-item text-center">
+            <img src="Galeria/8.jpg" class="d-block w-100 rounded shadow" alt="Momento 4" />
+            <div class="mt-2">Aquele beijo roubado (ou será que foi combinado?) 😘</div>
+          </div>
+          <div class="carousel-item text-center">
+            <img src="Galeria/1.jpg" class="d-block w-100 rounded shadow" alt="Momento 5" />
+            <div class="mt-2">Sorrisos que dizem tudo 😊</div>
+          </div>
+          <div class="carousel-item text-center">
+            <img src="./Galeria/4.jpg" class="d-block w-100 rounded shadow" alt="Momento 6" />
+            <div class="mt-2">"Por você eu virava flamenguista"🌇</div>
+          </div>
+          <div class="carousel-item text-center">
+            <img src="Galeria/6.jpg" class="d-block w-100 rounded shadow" alt="Momento 7" />
+            <div class="mt-2">"Você me amaria se eu fosse desenho?" 💬</div>
+          </div>
+          <div class="carousel-item text-center">
+            <img src="Galeria/9.jpg" class="d-block w-100 rounded shadow" alt="Momento 8" />
+            <div class="mt-2">A família que um dia quero criar com você 💘</div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#momentosCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon bg-dark rounded-circle" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#momentosCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon bg-dark rounded-circle" aria-hidden="true"></span>
+          <span class="visually-hidden">Próximo</span>
+        </button>
+      </div>
+
+      
+  </section>
+
+  <section class="container py-5" id="playlist">
+    <h2 class="text-center mb-4">Nossa Trilha Sonora</h2>
+    <div class="text-center">
+      <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/0d3nLIxfrwZu7sHQnOhWJa?utm_source=generator" width="100%" height="152" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    </div>
+  </section>
+
+  <section class="py-5 bg-light" id="carta">
+    <div class="container">
+      <h2 class="text-center mb-4">Uma Cartinha pra Você</h2>
+      <p class="cartinha fs-5">
+        Desde que você entrou na minha vida, tudo ficou mais bonito. Seus sorrisos são como amanheceres, e seu abraço é o meu lar.
+        Cada momento com você é um capítulo especial da história mais linda que já vivi. Obrigado por ser minha melhor amiga, meu amor,
+        minha paz. Esse site é só uma tentativa (bem humilde) de te mostrar o quanto você é amada, admirada e essencial na minha vida.
+        Te amo mais do que palavras podem dizer — e olha que tentei colocar em código! ❤️
+      </p>
+    </div>
+  </section>
+
+  <footer class="text-center p-4 bg-dark text-white">
+    <p>Feito com ❤️ por quem mais te ama.</p>
+  </footer>
+
+  <script>
+    function createHeart() {
+      const heart = document.createElement('div');
+      heart.classList.add('heart');
+      heart.style.left = Math.random() * 100 + 'vw';
+      heart.style.fontSize = 10 + Math.random() * 20 + 'px';
+      heart.style.animationDuration = 4 + Math.random() * 3 + 's';
+      heart.textContent = '❤️';
+      document.body.appendChild(heart);
+      setTimeout(() => heart.remove(), 8000);
+    }
+    setInterval(createHeart, 800);
+  </script>
+
+  <script>
+    const dataInicio = new Date(2025, 0, -17, 0, 0, 0);
+    function atualizaTempoJuntos() {
+      const agora = new Date();
+      let diff = agora - dataInicio;
+
+      let segundos = Math.floor(diff / 1000) % 60;
+      let minutos = Math.floor(diff / (1000 * 60)) % 60;
+      let horas = Math.floor(diff / (1000 * 60 * 60)) % 24;
+      let dias = Math.floor(diff / (1000 * 60 * 60 * 24));
+
+      let anos = Math.floor(dias / 365);
+      let meses = Math.floor((dias % 365) / 30);
+      dias = (dias % 365) % 30;
+
+      document.getElementById('contadorJuntos').textContent =
+        `Juntos há ${anos} anos, ${meses} meses, ${dias} dias, ${horas}h ${minutos}m ${segundos}s`;
+    }
+    setInterval(atualizaTempoJuntos, 1000);
+    atualizaTempoJuntos();
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
